@@ -1,29 +1,41 @@
 # Meu Pet — Área de Membros Premium
 
-Projeto estático em HTML, sem tela de login, pronto para Vercel ou GitHub Pages.
+Projeto estático em HTML, sem tela de login, pronto para publicação na Vercel ou no GitHub Pages.
 
-## Conteúdo
+## Alteração desta versão
 
-- 24 aulas de cachorrinhos;
-- 10 aulas de gatinhos;
-- 10 aulas de marketing, vendas e precificação;
-- 7 aulas de fotografia;
-- materiais complementares no Google Drive.
+O player voltou ao **modelo antigo de iframe**, igual ao usado na versão original da área de membros:
 
-## Alterações desta versão
+- incorporação direta por `iframe`;
+- domínio `youtube-nocookie.com`;
+- sem uso da API JavaScript do YouTube;
+- sem `referrerpolicy` personalizado;
+- reprodução dentro da própria página para vídeos que permitem incorporação;
+- botão **Abrir no YouTube** mantido como alternativa.
 
-- Removidas as antigas aulas de cachorrinhos 1 a 9 e 12.
-- A antiga aula 1 foi descartada definitivamente.
-- Adicionados 7 links novos; os links repetidos `xTy9sfkGXto` e `IOD_cgaotVU` foram incluídos apenas uma vez.
-- Mantidas e renumeradas as antigas aulas 10, 11 e 13 a 27.
-- Preservadas as trilhas de gatinhos, vendas, fotografia e materiais em PDF.
-- Novo visual premium inspirado em plataformas de streaming, responsivo para celular e computador.
-- Busca, continuar assistindo, progresso local, aulas concluídas e navegação anterior/próxima.
+Todas as aulas, módulos, progresso, busca, rolagem automática, materiais em PDF e demais funções da versão anterior foram preservados.
+
+## Arquivos
+
+- `index.html` — área de membros completa;
+- `README.md` — instruções do projeto.
 
 ## Publicação
 
-Envie `index.html` e `README.md` para a raiz do projeto. Na Vercel, publique como site estático. No GitHub Pages, use **Settings > Pages > Deploy from a branch**.
+Envie os dois arquivos para a raiz do projeto na Vercel ou no GitHub Pages.
 
-## Vídeos do YouTube
+Para testar localmente no computador, abra um terminal dentro da pasta e execute:
 
-Os vídeos continuam hospedados no YouTube. Quando o proprietário desativar a incorporação, a página troca o player por um botão **Abrir aula no YouTube**. Essa limitação não pode ser burlada pelo HTML. Para reprodução 100% interna, utilize vídeos próprios em uma hospedagem que permita incorporação.
+```bash
+python -m http.server 8080
+```
+
+Depois acesse:
+
+```text
+http://localhost:8080
+```
+
+## Observação sobre o YouTube
+
+A página consegue reproduzir internamente apenas vídeos que permitem incorporação em outros sites. Quando o proprietário do vídeo bloqueia essa opção no YouTube, o HTML não consegue remover a restrição; nesse caso, use o botão **Abrir no YouTube**.
