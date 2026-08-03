@@ -1,49 +1,53 @@
-# Meu Pet — Área de Membros Premium (biblioteca ampliada)
+# Meu Pet — Área de Membros Premium (Lhasa e player corrigidos)
 
 Projeto estático em HTML, sem tela de login, pronto para Vercel ou GitHub Pages.
 
-## Conteúdo atual
+## Correções desta versão
+
+- restaurada a aula **Lhasa em amigurumi — Parte 1 (receita escrita)**;
+- mantida logo abaixo a **Parte 2 (receita escrita)**;
+- identificada e organizada também a sequência clássica de Lhasa em **Parte 1 e Parte 2**;
+- removida a aula avulsa de Border Collie que começava diretamente pela Parte 2;
+- mantida a sequência completa de Border Collie em Parte 1 e Parte 2;
+- preservadas todas as demais aulas, os módulos de gatinhos, marketing, fotografia e os materiais em PDF;
+- o player deixou de usar a API dinâmica do YouTube e voltou a usar incorporação direta por `iframe`, como na versão anterior;
+- adicionado `referrerpolicy="strict-origin-when-cross-origin"`, necessário para a reprodução incorporada atual do YouTube;
+- mantidos busca, progresso, rolagem automática para o player e navegação entre aulas.
+
+## Quantidade de aulas
 
 - **33 aulas** na trilha de cachorrinhos;
 - 10 aulas de gatinhos;
 - 10 aulas de marketing, vendas e precificação;
 - 7 aulas de fotografia;
-- biblioteca destacada de receitas e materiais em PDF no Google Drive;
 - **60 videoaulas ao todo**.
 
-## Novidades desta versão
+## Teste correto do player
 
-- Acrescentadas **12 novas videoaulas** de cachorrinhos em amigurumi.
-- Nenhum link já existente foi duplicado.
-- As novas aulas aparecem com selo **NOVA AULA**.
-- A plataforma consulta automaticamente o título público de cada vídeo para apresentar o nome correto da aula.
-- Quando o título identifica uma raça que já existe no curso, a nova aula é posicionada logo abaixo das aulas daquela raça como conteúdo complementar.
-- Quando não existe correspondência clara de raça, a aula fica ao final da trilha de cachorrinhos.
-- Permanecem ativos o player, a busca, a rolagem automática até o vídeo, o progresso salvo no aparelho e o fallback para abrir no YouTube quando a incorporação não for permitida.
+Não teste os vídeos abrindo o `index.html` diretamente pelo gerenciador de arquivos (`file://`). O YouTube pode bloquear a reprodução porque esse modo não envia a referência HTTP do site.
 
-## Novos vídeos adicionados
+### Opção recomendada
 
-- https://www.youtube.com/watch?v=-TS7JDUNxhc
-- https://www.youtube.com/watch?v=cV8qDpJtvs4
-- https://www.youtube.com/watch?v=JR7eQXBP6E0
-- https://www.youtube.com/watch?v=9ojjsTT_75c
-- https://www.youtube.com/watch?v=Pq7US6b8NvA
-- https://www.youtube.com/watch?v=TXs0lhfymao
-- https://www.youtube.com/watch?v=etPUkDIIOpM
-- https://www.youtube.com/watch?v=IGl9bGdkiEM
-- https://www.youtube.com/watch?v=PxGKeSGZIl8
-- https://www.youtube.com/watch?v=1C6VzOw1JGY
-- https://www.youtube.com/watch?v=_QXMJ0Mvz38
-- https://www.youtube.com/watch?v=UYNZPu-NTU0
+Publique os arquivos na Vercel ou no GitHub Pages e teste pela URL HTTPS.
+
+### Teste local no computador
+
+Na pasta do projeto, execute:
+
+```bash
+python -m http.server 8080
+```
+
+Depois abra:
+
+```text
+http://localhost:8080
+```
 
 ## Publicação
 
 Envie `index.html` e `README.md` para a raiz do projeto. Na Vercel, publique como site estático. No GitHub Pages, use **Settings > Pages > Deploy from a branch**.
 
-## Observação sobre os títulos
+## Observação
 
-Os nomes públicos dos novos vídeos são consultados automaticamente no carregamento da página. Caso a conexão impeça temporariamente essa consulta, a plataforma exibe um título complementar numerado e mantém o vídeo acessível normalmente.
-
-## Vídeos do YouTube
-
-Os vídeos permanecem hospedados no YouTube. Se o proprietário desativar a reprodução incorporada, a plataforma apresenta um botão para abrir a aula diretamente no YouTube, evitando um player quebrado.
+Se o proprietário de um vídeo desativar a opção de incorporação no próprio YouTube, nenhum código HTML consegue forçar a reprodução dentro de outro site. Nessa situação, o botão **Abrir no YouTube** continua disponível.
