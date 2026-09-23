@@ -1,13 +1,13 @@
-# Meu Pet — Área de Membros (Atualizado)
+# Meu Pet — Área de Membros
 
-Atualização realizada preservando a estrutura original da área de membros.
+Arquivo atualizado da área de membros.
 
-Incluído:
-- Todas as aulas originais mantidas.
-- Novas 8 videoaulas do módulo Cachorro Salsicha adicionadas dentro do módulo de cães.
-- Player, progresso e organização original preservados.
+Conteúdo incluído:
+- index.html da área de membros
+- Videoaulas originais preservadas
+- Novas aulas do Cachorro Salsicha/Linguiça adicionadas
 
-Publicação:
-1. Substitua o index.html no GitHub.
-2. Faça commit.
-3. Aguarde o GitHub Pages atualizar.
+Como publicar no GitHub Pages:
+1. Envie o arquivo index.html para a raiz do repositório.
+2. Faça o commit das alterações.
+3. Aguarde a atualização do GitHub Pages.
