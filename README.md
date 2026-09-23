@@ -1,9 +1,12 @@
 # Meu Pet — Área de Membros
 
-Atualização feita a partir do index.html original.
+Atualização feita no index.html original.
 
 Alterações:
-- Mantidas todas as videoaulas existentes.
-- Mantida a estrutura original da página.
-- Adicionadas 8 novas videoaulas do Cachorro Salsicha no módulo Cachorrinhos.
-- Não foram alterados layout, CSS ou scripts.
+- Videoaulas existentes preservadas.
+- Estrutura original mantida.
+- Apenas 8 novas aulas de Cachorro Salsicha adicionadas no array de aulas do módulo Cachorrinhos.
+- CSS, player e lógica de progresso não foram recriados.
+
+Arquivo principal:
+- index.html
