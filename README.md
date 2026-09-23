@@ -1,41 +1,22 @@
-# Meu Pet — Área de Membros Premium
+# Meu Pet — Área de Membros
 
-Projeto estático em HTML, sem tela de login, pronto para publicação na Vercel ou no GitHub Pages.
+## Atualização incluída
 
-## Alteração desta versão
+Foram adicionadas 8 novas aulas do módulo de Cachorro Salsicha em amigurumi:
 
-O player voltou ao **modelo antigo de iframe**, igual ao usado na versão original da área de membros:
+1. Aula 1
+2. Aula 2
+3. Aula 3
+4. Aula 4
+5. Aula 5
+6. Aula 6
+7. Aula 7
+8. Aula 8
 
-- incorporação direta por `iframe`;
-- domínio `youtube-nocookie.com`;
-- sem uso da API JavaScript do YouTube;
-- sem `referrerpolicy` personalizado;
-- reprodução dentro da própria página para vídeos que permitem incorporação;
-- botão **Abrir no YouTube** mantido como alternativa.
+## Publicação no GitHub
 
-Todas as aulas, módulos, progresso, busca, rolagem automática, materiais em PDF e demais funções da versão anterior foram preservados.
+1. Envie o arquivo `index.html` para o repositório.
+2. Ative o GitHub Pages.
+3. Aguarde a publicação da área de membros.
 
-## Arquivos
-
-- `index.html` — área de membros completa;
-- `README.md` — instruções do projeto.
-
-## Publicação
-
-Envie os dois arquivos para a raiz do projeto na Vercel ou no GitHub Pages.
-
-Para testar localmente no computador, abra um terminal dentro da pasta e execute:
-
-```bash
-python -m http.server 8080
-```
-
-Depois acesse:
-
-```text
-http://localhost:8080
-```
-
-## Observação sobre o YouTube
-
-A página consegue reproduzir internamente apenas vídeos que permitem incorporação em outros sites. Quando o proprietário do vídeo bloqueia essa opção no YouTube, o HTML não consegue remover a restrição; nesse caso, use o botão **Abrir no YouTube**.
+A estrutura visual original foi preservada.
